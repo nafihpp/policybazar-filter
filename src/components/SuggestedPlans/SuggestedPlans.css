@@ -1,0 +1,62 @@
+.main-container-suggested {
+    width: 40%;
+    padding: 50px 0;
+}
+.card {
+    padding: 20px 19px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0 #d3e1ea;
+    background-color: #fff;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.card-title {
+    color: #052e5e;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 3px;
+    font-size: 25px;
+    margin-bottom: 19px;
+    font-weight: 600;
+}
+.card .card-item {
+    display: flex;
+    margin-bottom: 19px;
+}
+.advantage-container {
+    position: sticky;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantage-container .advantage-image {
+    display: flex;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e3eaf9;
+    align-items: center;
+}
+.button-know-more {
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #0065ff;
+    border-radius: 3px;
+    padding: 9px 7px;
+    background-color: #fff;
+    color: #0065ff;
+    margin-top: 20px;
+    margin-left: 58px;
+    cursor: pointer;
+}
+.lowest-price {
+    margin-top: 12px;
+}
+.lowest-price,
+.expert-advice,
+.claims-assistance,
+.easy-refunds,
+.exciting-rewards {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}

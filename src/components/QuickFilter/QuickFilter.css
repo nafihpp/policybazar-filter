@@ -1,0 +1,104 @@
+.quick-filter-container {
+    padding: 10px 0;
+}
+.swiper-main-container {
+    display: flex;
+    padding: 20px 0;
+}
+
+.swiper-main-container .heading {
+    font-weight: 600;
+    color: #052e5e;
+    padding-right: 15px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+}
+.inputContainer input {
+    width: 100%;
+    padding: 12px 37px;
+    border: 1px solid #b3bac5;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.inputContainer .search-image-container {
+    position: absolute;
+    top: 14px;
+    left: 9px;
+}
+.search-dropdown {
+    padding: 12px 30px 12px 14px;
+    border: 1px solid #b3bac5;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+.swiper-main-container .filter-last-container {
+    background-color: #fff;
+    width: 125px;
+    padding: 13px;
+    white-space: nowrap;
+    border: 1px solid #b3bac5;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.swiper-main-container .filter-last-container .count-filter {
+    font-weight: 400;
+    position: absolute;
+    top: -9px;
+    right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #00c127;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.swiper-navigation-prev,
+.swiper-navigation-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.swiper-prev,
+.swiper-next {
+    border: 2px solid #0065ff;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 23px !important;
+    height: 23px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.bottom-text {
+    display: flex;
+    align-items: center;
+    padding-left: 173px;
+    cursor: pointer;
+}
+.bottom-text .iconFilter {
+    background-color: #f4f5f7;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    padding: 10px;
+    display: flex;
+    border-radius: 50%;
+}
+.display-checkbox {
+    display: flex;
+    align-items: center;
+    margin-left: 2px;
+}

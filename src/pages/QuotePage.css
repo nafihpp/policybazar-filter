@@ -1,0 +1,10 @@
+.fixed-header {
+    position: sticky;
+    z-index: 1003;
+    top: 0px;
+    background: #fff;
+}
+.spotlight {
+    display: flex;
+    justify-content: space-between;
+}

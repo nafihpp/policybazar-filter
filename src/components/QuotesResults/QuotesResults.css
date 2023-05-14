@@ -1,0 +1,180 @@
+.main-quotes-container {
+    padding: 50px 0;
+    width: 100%;
+}
+.main-quotes-container ::-webkit-scrollbar {
+    display: none;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.mainHeading {
+    color: #052e5e;
+    font-weight: 600;
+}
+.left {
+    height: 100px;
+    width: 100px;
+    position: sticky;
+    top: 200px;
+    padding: 20px 15px 13.7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 1px 7px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.right {
+    padding: 20px 0;
+    background-color: #fff;
+    border: 1px solid #dbe3e8;
+    height: 300px;
+    width: 90%;
+    position: relative;
+    border-radius: 8px;
+}
+.image-icircle {
+    margin-left: 6px;
+}
+.product-info-title {
+    color: #505f79;
+}
+.product-info-sub-title {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #052e5e;
+}
+.network {
+    background-color: #efefef;
+    color: var(--color-c4);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 0 8px;
+}
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid;
+    width: 90%;
+    margin: 0 auto;
+}
+.top-container .product-info {
+    display: flex;
+    flex-direction: column;
+}
+.middle-container {
+    width: 90%;
+    margin: 0 auto;
+}
+.last-container {
+    padding: 20px 0;
+    background-color: #fff;
+    border: 1px solid #dbe3e8;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.middle-container .middle-container-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.aed-button {
+    font-size: 14px;
+    border: 1px solid #f9491f;
+    background-color: #f9491f;
+    color: #fff;
+    border-radius: 4px;
+    padding: 9px 5px;
+    width: 100%;
+    cursor: pointer;
+}
+.card-copay-items {
+    display: flex;
+    margin-bottom: 10px;
+}
+.card-copay-header {
+    margin: 11px 0 11px 0;
+}
+.card-copay-title {
+    color: #505f79;
+}
+.compare-container {
+    background: #fafafa;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.compare-container button {
+    margin-right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.bottom-feedback {
+    background-color: #fff7db;
+    padding: 13px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.2;
+    padding-left: 25px;
+    margin-right: 10px;
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+.custom-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+    background-color: #00a870;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 6px;
+    top: 0px;
+    width: 6px;
+    height: 11px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
