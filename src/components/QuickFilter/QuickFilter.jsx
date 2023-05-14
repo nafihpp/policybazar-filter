@@ -102,11 +102,11 @@ export const QuickFilter = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div
-                                    class="search-dropdown"
+                                    className="search-dropdown"
                                     onClick={handleChange}
                                 >
-                                    <span class="text-wid">Sort</span>
-                                    <span class="display-checkbox">
+                                    <span className="text-wid">Sort</span>
+                                    <span className="display-checkbox">
                                         <svg
                                             stroke="currentColor"
                                             fill="currentColor"
@@ -156,13 +156,40 @@ export const QuickFilter = () => {
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div
-                                    class="search-dropdown"
+                                    className="search-dropdown"
                                     onClick={handleChange}
                                 >
                                     <span class="text-wid">
                                         Network Hospital
                                     </span>
-                                    <span class="display-checkbox">
+                                    <span className="display-checkbox">
+                                        <svg
+                                            stroke="currentColor"
+                                            fill="currentColor"
+                                            stroke-width="0"
+                                            viewBox="0 0 24 24"
+                                            height="1em"
+                                            width="1em"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <g>
+                                                <path
+                                                    fill="none"
+                                                    d="M0 0h24v24H0z"
+                                                ></path>
+                                                <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"></path>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div
+                                    className="search-dropdown"
+                                    onClick={handleChange}
+                                >
+                                    <span className="text-wid">Co Payment</span>
+                                    <span className="display-checkbox">
                                         <svg
                                             stroke="currentColor"
                                             fill="currentColor"
@@ -188,8 +215,10 @@ export const QuickFilter = () => {
                                     class="search-dropdown"
                                     onClick={handleChange}
                                 >
-                                    <span class="text-wid">Co Payment</span>
-                                    <span class="display-checkbox">
+                                    <span className="text-wid">
+                                        Medical Cover
+                                    </span>
+                                    <span className="display-checkbox">
                                         <svg
                                             stroke="currentColor"
                                             fill="currentColor"
@@ -211,36 +240,9 @@ export const QuickFilter = () => {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div
-                                    class="search-dropdown"
-                                    onClick={handleChange}
-                                >
-                                    <span class="text-wid">Medical Cover</span>
-                                    <span class="display-checkbox">
-                                        <svg
-                                            stroke="currentColor"
-                                            fill="currentColor"
-                                            stroke-width="0"
-                                            viewBox="0 0 24 24"
-                                            height="1em"
-                                            width="1em"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <g>
-                                                <path
-                                                    fill="none"
-                                                    d="M0 0h24v24H0z"
-                                                ></path>
-                                                <path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"></path>
-                                            </g>
-                                        </svg>
-                                    </span>
-                                </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                                <div class="search-dropdown">
-                                    <span class="text-wid">Insurers</span>
-                                    <span class="display-checkbox">
+                                <div className="search-dropdown">
+                                    <span className="text-wid">Insurers</span>
+                                    <span className="display-checkbox">
                                         <svg
                                             stroke="currentColor"
                                             fill="currentColor"
