@@ -8,8 +8,16 @@ import bookmark from "../../assets/icon-book-mark-active.svg";
 import pharmacy from "../../assets/pharmacy.svg";
 import physician from "../../assets/physician-consultation.svg";
 import physio from "../../assets/physiotherapy.svg";
+import { Modal } from "../Modal";
+import { useState } from "react";
 
 export const QuotesResults = () => {
+    const [modal, setModal] = useState(false);
+
+    const handleChange = () => {
+        setModal(!modal);
+    };
+
     return (
         <div className="main-quotes-container">
             <div className="wrapper">
@@ -106,7 +114,10 @@ export const QuotesResults = () => {
                                     </div>
                                 </div>
                                 <div className="right-container">
-                                    <button className="aed-button">
+                                    <button
+                                        className="aed-button"
+                                        onClick={handleChange}
+                                    >
                                         AED 2,750 Yealy
                                     </button>
                                 </div>
@@ -241,7 +252,10 @@ export const QuotesResults = () => {
                                     </div>
                                 </div>
                                 <div className="right-container">
-                                    <button className="aed-button">
+                                    <button
+                                        className="aed-button"
+                                        onClick={handleChange}
+                                    >
                                         AED 2,750 Yealy
                                     </button>
                                 </div>
@@ -376,7 +390,10 @@ export const QuotesResults = () => {
                                     </div>
                                 </div>
                                 <div className="right-container">
-                                    <button className="aed-button">
+                                    <button
+                                        className="aed-button"
+                                        onClick={handleChange}
+                                    >
                                         AED 2,750 Yealy
                                     </button>
                                 </div>
@@ -511,7 +528,10 @@ export const QuotesResults = () => {
                                     </div>
                                 </div>
                                 <div className="right-container">
-                                    <button className="aed-button">
+                                    <button
+                                        className="aed-button"
+                                        onClick={handleChange}
+                                    >
                                         AED 2,750 Yealy
                                     </button>
                                 </div>
@@ -646,7 +666,10 @@ export const QuotesResults = () => {
                                     </div>
                                 </div>
                                 <div className="right-container">
-                                    <button className="aed-button">
+                                    <button
+                                        className="aed-button"
+                                        onClick={handleChange}
+                                    >
                                         AED 2,750 Yealy
                                     </button>
                                 </div>
@@ -702,6 +725,11 @@ export const QuotesResults = () => {
                     </div>
                 </div>
             </div>
+            {modal && (
+                <Modal handleChange={handleChange}>
+                    <h1>Coming Soon</h1>
+                </Modal>
+            )}
         </div>
     );
 };
