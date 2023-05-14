@@ -36,6 +36,14 @@
     border-bottom: 1px solid #e3eaf9;
     align-items: center;
 }
+.advantage-container .advantage-title {
+    color: #052e5e;
+    font-weight: 500;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+}
+
 .button-know-more {
     font-size: 14px;
     font-weight: 400;
