@@ -2,7 +2,7 @@ import "./QuickFilter.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/swiper-bundle.css";
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import iconSearch from "../../assets/Icon-search.svg";
 import iconFilter from "../../assets/Icon-filter.png";
 import editIcon from "../../assets/edit-profile.svg";
@@ -10,6 +10,21 @@ import { Modal } from "../Modal";
 
 export const QuickFilter = () => {
     const [modal, setModal] = useState(false);
+    const [search, setSearch] = useState("");
+    const [data, setData] = useState([
+        {
+            id: 1,
+            title: "Arab Insurance co",
+        },
+        {
+            id: 2,
+            title: "True Doc Insurance",
+        },
+        {
+            id: 3,
+            title: "get it now go back to the insurance",
+        },
+    ]);
     const handleChange = () => {
         setModal(!modal);
     };
@@ -27,6 +42,17 @@ export const QuickFilter = () => {
             swiperRef.current.swiper.slidePrev();
         }
     };
+    const handleInput = (e) => {
+        setSearch(e.target.value);
+    };
+    useEffect(() => {
+        if (search) {
+            let datas = data.filter((sear) =>
+                sear.title.toLowerCase().includes(search.toLowerCase())
+            );
+            console.log(datas ? datas : "nodata", "==searchData");
+        }
+    }, [search]);
     return (
         <Fragment>
             <div className="main-container-filter">
@@ -64,6 +90,7 @@ export const QuickFilter = () => {
                                         placeholder="Search"
                                         class="input-search"
                                         ref={searchRef}
+                                        onChange={handleInput}
                                     />
                                     <div className="search-image-container">
                                         <img

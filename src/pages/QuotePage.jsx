@@ -17,10 +17,6 @@ const QuotePage = () => {
                 <QuotesResults />
                 <SuggestedPlans />
             </div>
-            {/* <Modal>
-                <h1>Hai</h1>
-                <p>bye</p>
-            </Modal> */}
         </Fragment>
     );
 };
